@@ -1,10 +1,18 @@
 {
   "name": "svgl-client",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple Node.js client for the SVGL API (https://svgl.app)",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jensroth-git/svgl-client.git"
+  },
+  "homepage": "https://svgl.app",
+  "bugs": {
+    "url": "https://github.com/jensroth-git/svgl-client/issues"
+  },
   "scripts": {
     "build": "tsc",
     "test": "jest src/__tests__/index.mock.test.ts",
