@@ -1,0 +1,40 @@
+{
+  "name": "svgl-client",
+  "version": "0.1.1",
+  "description": "A simple Node.js client for the SVGL API (https://svgl.app)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest src/__tests__/index.mock.test.ts",
+    "test:live": "jest --runInBand src/__tests__/index.live.test.ts",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "svgl",
+    "svg",
+    "api",
+    "client",
+    "logo",
+    "icon"
+  ],
+  "author": "jensroth",
+  "license": "MIT",
+  "dependencies": {
+    "node-fetch": "^2.7.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.14",
+    "@types/node-fetch": "^2.6.12",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.3.0",
+    "typescript": "^5.8.2"
+  }
+}
